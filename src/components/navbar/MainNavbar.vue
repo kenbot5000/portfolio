@@ -12,28 +12,32 @@ const navItems = [
 <template>
   <div
     class="
-      min-h-screen
-      max-h-screen
+      max-w-full
+      sm:min-h-screen
+      sm:max-h-screen
+      sm:w-150
       bg-[#12130F] 
       font-jura
       text-white 
       my-auto
-      absolute
+      sticky
+      top-0
+      sm:left-0
       border-solid
-      border-r-4
+      sm:border-r-4
       border-[#80808012]
    "
   >
     <div
       class="
         flex
-        flex-col
+        sm:flex-col
         justify-center
         items-center
         text-2xl
         font-bold 
-        min-h-screen
-        max-h-screen
+        sm:min-h-screen
+        sm:max-h-screen
       "
     >
       <div class="text-3xl py-3 font-quantico font-normal">
