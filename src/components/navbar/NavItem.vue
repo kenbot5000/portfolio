@@ -1,10 +1,12 @@
 <template>
-  <a
+  <RouterLink
+    :to="{name: link}"
     href="javascript:;"
     class="w-full py-3 transition duration-300 ease-in-out hover:scale-120 text-center"
+    :class="link == $route.name ? 'underline underline-offset-3' : ''"
   >
     {{ text }}
-  </a>
+  </RouterLink>
 </template>
 
 <script setup>

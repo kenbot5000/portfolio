@@ -2,10 +2,10 @@
 import NavItem from '@/components/navbar/NavItem.vue'
 
 const navItems = [
-  { text: 'portfolio', link: '#' },
-  { text: 'about', link: '#' },
-  { text: 'github', link: '#' },
-  { text: 'contact', link: '#' }
+  { text: 'portfolio', link: 'portfolio' },
+  { text: 'about', link: 'about' },
+  { text: 'github', link: 'github' },
+  { text: 'contact', link: 'contact' }
 ]
 </script>
 

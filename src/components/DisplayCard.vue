@@ -7,7 +7,6 @@
     <div
       class="
       bg-[#21221D] 
-      w-full  
       my-auto 
       border-white 
       border-2
@@ -18,7 +17,7 @@
       <img
         :src="imageUrl"
         alt="Placeholder Image"
-        class="w-full object-cover"
+        class="object-cover"
       >
       <div class="text-center">
         <h2 class="text-white text-lg font-bold p-2 transition duration-300 ease-in-out group-hover:scale-120">
