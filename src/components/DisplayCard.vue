@@ -1,8 +1,8 @@
 <template>
   <a
-    :href="url"
-    target="_blank"
+    href="javascript:;"
     class="group"
+    @click="$emit('open-display', id)"
   >
     <div
       class="
@@ -29,10 +29,21 @@
 </template>
 
 <script setup>
+defineEmits(['open-display'])
+
 defineProps({
+  id: {
+    type: String,
+    required: true,
+  },
   title: {
     type: String,
     required: true,
+  },
+  description: {
+    type: String,
+    required: false,
+    default: ''
   },
   imageUrl: {
     type: String,
