@@ -1,7 +1,7 @@
 <template>
   <a
     href="javascript:;"
-    class="group"
+    class="group font-jura"
     @click="$emit('open-display', id)"
   >
     <div

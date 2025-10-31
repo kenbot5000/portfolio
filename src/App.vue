@@ -17,7 +17,10 @@ import MainNavbar from '@/components/navbar/MainNavbar.vue';
     bg-[size:24px_24px]"
   >
     <MainNavbar class="w-full md:w-2/6 xl:w-1/6" />
-    <div class="md:w-5/6 w-full min-h-screen flex items-center">
+    <div class="md:w-5/6 w-full min-h-screen flex flex-col items-center">
+      <div class="m-auto text-4xl text-white font-black font-jura">
+        Hi there, I'm Kenshin! Check out what I worked on.
+      </div>
       <RouterView />
     </div>
   </div>

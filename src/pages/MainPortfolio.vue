@@ -37,7 +37,8 @@ let openDisplay = (id) => {
     <Transition name="fade">
       <div
         v-if="displayOpen"
-        class="fixed 
+        class="
+          fixed 
           top-1/2
           left-1/2 
           -translate-1/2
@@ -46,46 +47,73 @@ let openDisplay = (id) => {
           rounded-md 
           p-4 
           text-white
+          font-jura
         "
         :class="displayOpen ? 'opacity-100' : 'opacity-0'"
       >
+        <div class="w-full flex justify-end">
+          <a
+            href="javascript:;"
+            class="text-white text-2xl hover:cursor-pointer font-black"
+            @click="displayOpen = false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+
+          </a>
+        </div>
         <img
           :src="currentDisplay.image"
           alt=""
           class="mb-4 rounded-md mx-auto"
         >
-        <h2 class="text-2xl font-bold mb-2 hover:underline">
-          {{ currentDisplay.title }}
-        </h2>
-        <p
-          v-for="(line, index) in currentDisplay.description"
-          :key="index"
-          class="mb-2"
-        >
-          {{ line }}
-        </p>
-        <a
-          v-if="currentDisplay.url"
-          :href="currentDisplay.url"
-          target="_blank"
-        >
-          <button 
-            class="
-              rounded-md 
-              bg-stone-300 
-              py-2 
-              px-4 
-              text-stone-800 
-              hover:bg-stone-400 
-              hover:cursor-pointer 
-              font-bold 
-              border-2 
-              border-stone-700
-            "
+        <div class="px-5">
+          <h2 class="text-3xl font-bold mb-4 hover:underline">
+            {{ currentDisplay.title }}
+          </h2>
+          <p
+            v-for="(line, index) in currentDisplay.description"
+            :key="index"
+            class="mb-3 text-justify"
           >
-            Open Site
-          </button>
-        </a>
+            {{ line }}
+          </p>
+          <a
+            v-if="currentDisplay.url"
+            :href="currentDisplay.url"
+            target="_blank"
+            class="my-4"
+          >
+            <button 
+              class="
+                rounded-md 
+                bg-stone-300 
+                py-2 
+                px-4 
+                text-stone-800 
+                hover:bg-stone-400 
+                hover:cursor-pointer 
+                font-bold 
+                border-2 
+                border-stone-700
+              "
+            >
+              Open Site
+            </button>
+          </a>
+        </div>
       </div>
     </Transition>
   </div>
