@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import MainPortfolio from '@/pages/MainPortfolio.vue'
-import About from '@/pages/About.vue'
-import Contact from '@/pages/Contact.vue'
+import About from '@/pages/AboutMe.vue'
+import Contact from '@/pages/ContactMe.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
