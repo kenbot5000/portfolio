@@ -1,6 +1,21 @@
 <script setup>
 import MainNavbar from '@/components/navbar/MainNavbar.vue';
 
+import { ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = ref(useRoute())
+
+const pageHeaderMessage = computed(() => {
+  switch (route.value.name) {
+    case "about":
+      return "About Me"
+    case "contact":
+      return "Contact Me"
+    default: 
+      return "Hi there, I'm Kenshin! Check out what I worked on.";
+  }
+})
 </script>
 
 <template>
@@ -23,7 +38,7 @@ import MainNavbar from '@/components/navbar/MainNavbar.vue';
           class="px-5 text-xl md:text-4xl text-white font-black font-jura flex mb-5 text-center"
         >
           <div class="mx-auto">
-            Hi there, I'm Kenshin! Check out what I worked on.
+            {{ pageHeaderMessage }}
           </div>
         </div>
         <RouterView />
