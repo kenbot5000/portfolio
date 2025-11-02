@@ -17,11 +17,17 @@ import MainNavbar from '@/components/navbar/MainNavbar.vue';
     bg-[size:24px_24px]"
   >
     <MainNavbar class="w-full md:w-2/6 xl:w-1/6" />
-    <div class="md:w-5/6 w-full min-h-screen flex flex-col items-center">
-      <div class="m-auto text-4xl text-white font-black font-jura">
-        Hi there, I'm Kenshin! Check out what I worked on.
+    <div class="w-full min-h-screen flex items-center">
+      <div class="flex flex-col">
+        <div
+          class="px-5 text-xl md:text-4xl text-white font-black font-jura flex mb-5 text-center"
+        >
+          <div class="mx-auto">
+            Hi there, I'm Kenshin! Check out what I worked on.
+          </div>
+        </div>
+        <RouterView />
       </div>
-      <RouterView />
     </div>
   </div>
 </template>
