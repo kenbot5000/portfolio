@@ -45,7 +45,7 @@ const pageHeaderMessage = computed(() => {
           name="slowfade"
           mode="out-in"
         >
-          <RouterView />
+          <RouterView class="max-h-screen" />
         </Transition>
       </div>
     </div>
