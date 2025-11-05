@@ -18,10 +18,10 @@
         :src="image"
         class="object-cover"
       >
-      <div class="text-center">
-        <h2 class="text-white text-lg font-bold p-2 transition duration-300 ease-in-out group-hover:scale-120">
+      <div class="text-center py-2">
+        <div class="inline-block text-white text-lg font-bold p-2 transition duration-300 ease-in-out group-hover:scale-120">
           {{ title }}
-        </h2>
+        </div>
       </div>
     </div>
   </a>
