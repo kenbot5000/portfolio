@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 
 import DisplayCard from '@/components/DisplayCard.vue';
+import GithubIcon from '@/components/icons/GithubIcon.vue';
 import { text } from '@/data/text.js';
 
 const displayOpen = ref(false);
@@ -22,6 +23,7 @@ let openDisplay = (id) => {
       :title="val.title"
       :description="val.description"
       :url="val.url"
+      :image="val.image"
       @open-display="openDisplay(val.id)"
     />
 
@@ -38,14 +40,14 @@ let openDisplay = (id) => {
       <div
         v-if="displayOpen"
         class="
-          fixed 
+          fixed
           top-1/2
-          left-1/2 
+          left-1/2
           -translate-1/2
           bg-stone-800
-          w-1/2 
-          rounded-md 
-          p-4 
+          w-1/2
+          rounded-md
+          p-4
           text-white
           font-jura
         "
@@ -96,21 +98,46 @@ let openDisplay = (id) => {
             target="_blank"
             class="my-4"
           >
-            <button 
+            <button
               class="
-                rounded-md 
-                bg-stone-300 
-                py-2 
-                px-4 
-                text-stone-800 
-                hover:bg-stone-400 
-                hover:cursor-pointer 
-                font-bold 
-                border-2 
+                rounded-md
+                bg-stone-300
+                py-2
+                px-4
+                text-stone-800
+                hover:bg-stone-400
+                hover:cursor-pointer
+                font-bold
+                border-2
                 border-stone-700
               "
             >
               Open Site
+            </button>
+          </a>
+          <a
+            v-if="currentDisplay.github"
+            :href="currentDisplay.github"
+            target="_blank"
+            class="my-4"
+          >
+            <button
+              class="
+                rounded-md
+                bg-stone-300
+                py-2
+                px-4
+                text-stone-800
+                hover:bg-stone-400
+                hover:cursor-pointer
+                font-bold
+                border-2
+                border-stone-700
+              "
+            >
+              <div class="inline-flex">
+                <GithubIcon class="mr-2" /> Github
+              </div>
             </button>
           </a>
         </div>

@@ -6,17 +6,16 @@
   >
     <div
       class="
-      bg-[#21221D] 
-      my-auto 
-      border-white 
+      bg-[#21221D]
+      my-auto
+      border-white
       border-2
       flex
       flex-col
     "
     >
       <img
-        :src="imageUrl"
-        alt="Placeholder Image"
+        :src="image"
         class="object-cover"
       >
       <div class="text-center">
@@ -45,10 +44,10 @@ defineProps({
     required: false,
     default: ''
   },
-  imageUrl: {
+  image: {
     type: String,
     required: false,
-    default: 'https://placehold.co/800x400'
+    default: 'https://placehold.co/1920x1080'
   },
   url: {
     type: String,
