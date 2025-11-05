@@ -1,7 +1,7 @@
 <template>
   <svg
-    width="24"
-    height="24"
+    :width="width"
+    :height="width"
     viewBox="0 0 98 96"
     xmlns="http://www.w3.org/2000/svg"
   ><path
@@ -11,3 +11,16 @@
     fill="#24292f"
   /></svg>
 </template>
+
+<script setup>
+defineProps({
+  width: {
+    type: String,
+    default: '24px'
+  },
+  height: {
+    type: String,
+    default: '24px'
+  }
+})
+</script>
