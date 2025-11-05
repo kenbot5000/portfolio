@@ -45,15 +45,18 @@ let openDisplay = (id) => {
           left-1/2
           -translate-1/2
           bg-stone-800
-          w-1/2
+          w-full
+          md:w-1/2
           rounded-md
           p-4
           text-white
           font-jura
+          max-h-[90vh]
+          overflow-y-auto
         "
         :class="displayOpen ? 'opacity-100' : 'opacity-0'"
       >
-        <div class="w-full flex justify-end">
+        <div class="w-full flex justify-end mb-2">
           <a
             href="javascript:;"
             class="text-white text-2xl hover:cursor-pointer font-black"
