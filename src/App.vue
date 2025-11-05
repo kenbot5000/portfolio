@@ -41,10 +41,25 @@ const pageHeaderMessage = computed(() => {
             {{ pageHeaderMessage }}
           </div>
         </div>
-        <RouterView />
+        <Transition
+          name="slowfade"
+          mode="out-in"
+        >
+          <RouterView />
+        </Transition>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.slowfade-enter-active,
+.slowfade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.slowfade-enter-from,
+.slowfade-leave-to {
+  opacity: 0;
+}
+</style>
