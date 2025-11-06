@@ -6,9 +6,9 @@ import PortfolioIconCard from '@/components/PortfolioIconCard.vue';
 import GithubIcon from '@/components/icons/GithubIcon.vue';
 import UpworkIcon from '@/components/icons/UpworkIcon.vue';
 import ResumeIcon from '@/components/icons/ResumeIcon.vue';
+import LinkedInIcon from '@/components/icons/LinkedInIcon.vue';
 
 import { text } from '@/data/text.js';
-import LinkedInIcon from '@/components/icons/LinkedInIcon.vue';
 
 const displayOpen = ref(false);
 const currentDisplay = ref(null);
