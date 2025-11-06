@@ -4,7 +4,6 @@ import NavItem from '@/components/navbar/NavItem.vue'
 const navItems = [
   { text: 'portfolio', link: 'portfolio' },
   { text: 'about', link: 'about' },
-  { text: 'github', link: 'github' },
   { text: 'contact', link: 'contact' }
 ]
 </script>
@@ -16,7 +15,7 @@ const navItems = [
       sm:min-h-screen
       sm:max-h-screen
       sm:max-w-150
-      bg-[#12130F] 
+      bg-[#12130F]
       font-jura
       text-white
       absolute

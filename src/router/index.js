@@ -22,14 +22,6 @@ const router = createRouter({
       name: 'contact',
       component: Contact,
     },
-    {
-      path: '/github',
-      name: 'github',
-      beforeEnter() {
-        window.open('https://github.com/kenbot5000', '_blank')
-        this.$router.go(-1)
-      },
-    },
   ],
 })
 
