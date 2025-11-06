@@ -5,8 +5,8 @@ import UpworkIcon from '@/components/icons/UpworkIcon.vue';
 </script>
 
 <template>
-  <div class="text-white w-full flex justify-around font-spacemono">
-    <div class="bg-[#21221D] w-3/6 p-4">
+  <div class="text-white w-full flex flex-col-reverse lg:flex-row justify-around font-spacemono">
+    <div class="bg-[#21221D] mx-auto w-full md:mx-0 lg:w-3/6 p-4 self-center">
       <p class="text-xl mb-2 font-bold">
         Here's my contact form if you'd like to know more about me or my work!
       </p>
@@ -22,14 +22,14 @@ import UpworkIcon from '@/components/icons/UpworkIcon.vue';
         <input
           type="email"
           name="email"
-          class="bg-white block rounded-md w-1/2 h-8 mt-2 mb-4 text-black"
+          class="bg-white block rounded-md w-full lg:w-1/2 h-8 mt-2 mb-4 text-black"
         >
         <label class="block mb-2">
           Your message:
         </label>
         <textarea
           name="message"
-          class="bg-white block rounded-md w-1/2 h-30 mt-2 text-black"
+          class="bg-white block rounded-md w-full lg:w-1/2 h-30 mt-2 text-black"
         />
         <!-- your other form fields go here -->
         <button
@@ -51,7 +51,7 @@ import UpworkIcon from '@/components/icons/UpworkIcon.vue';
         </button>
       </form>
     </div>
-    <div class="bg-[#21221D] w-2/6 p-4 self-center">
+    <div class="bg-[#21221D] w-full lg:w-2/6 p-4 self-center">
       <div>
         <div class="flex justify-start">
           <EmailIcon />
