@@ -8,7 +8,7 @@ export const text = [
       'Most of what I worked on were the patient, doctor, and customer support dashboards, all utilizing Vue.js. Features of note were the patient onboarding form, prescription management, as well as chats between patients, doctors, and customer support representatives.',
     ],
     url: 'https://bywinona.com',
-    image: '/img/winona_home.jpg',
+    image: 'img/winona_home.jpg',
   },
   {
     id: 'infiniscan',
@@ -18,7 +18,7 @@ export const text = [
       'Built with Vue.js+Vuetify, with an Express.js and MongoDB backend. Primarily a solo project, this was done for my thesis in college.',
       'Features include a dynamic menu system, order management, and sales reporting. Also includes a QR scanner for order pickup verification.',
     ],
-    image: '/img/infiniscan.jpg',
+    image: 'img/infiniscan.jpg',
     github: 'https://github.com/kenbot5000/infiniscan',
   },
   {
@@ -28,7 +28,7 @@ export const text = [
       'A simple mockup website for a fictional Reddit clone as a demo of my frontend skills.',
       'Built with Vue and Vuetify.',
     ],
-    image: '/img/greenit.jpg',
+    image: 'img/greenit.jpg',
     github: 'https://github.com/kenbot5000/reddit-clone',
   },
 ]
