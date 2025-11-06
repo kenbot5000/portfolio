@@ -22,7 +22,10 @@ let openDisplay = (id) => {
 <template>
   <div class="flex flex-col">
     <div class="w-full xl:w-1/2 grid grid-cols-4 mx-auto text-white gap-x-4 px-7 mb-7">
-      <PortfolioIconCard text="Github">
+      <PortfolioIconCard
+        text="Github"
+        url="https://github.com/kenbot5000/"
+      >
         <GithubIcon
           width="50px"
           height="50px"
@@ -30,7 +33,10 @@ let openDisplay = (id) => {
           class="mx-auto aspect-square"
         />
       </PortfolioIconCard>
-      <PortfolioIconCard text="Resume">
+      <PortfolioIconCard
+        text="Resume"
+        url="/file/pineda_resume.pdf"
+      >
         <ResumeIcon
           width="50px"
           height="50px"
@@ -38,7 +44,10 @@ let openDisplay = (id) => {
           class="mx-auto aspect-square"
         />
       </PortfolioIconCard>
-      <PortfolioIconCard text="Upwork">
+      <PortfolioIconCard
+        text="Upwork"
+        url="https://www.upwork.com/freelancers/~01db45c1400f6b2f37"
+      >
         <UpworkIcon
           width="50px"
           height="50px"
@@ -46,7 +55,10 @@ let openDisplay = (id) => {
           class="mx-auto aspect-square"
         />
       </PortfolioIconCard>
-      <PortfolioIconCard text="LinkedIn">
+      <PortfolioIconCard
+        text="LinkedIn"
+        url="https://www.linkedin.com/in/rionn-kenshin-pineda-85309314b"
+      >
         <LinkedInIcon
           width="50px"
           height="50px"

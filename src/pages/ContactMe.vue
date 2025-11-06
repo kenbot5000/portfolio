@@ -75,7 +75,7 @@ import UpworkIcon from '@/components/icons/UpworkIcon.vue';
         <div class="flex justify-start">
           <UpworkIcon />
           <a
-            href="https://www.upwork.com/freelancers/~01db45c1400f6b2f37 "
+            href="https://www.upwork.com/freelancers/~01db45c1400f6b2f37"
             target="_blank"
           >
             <span class="text-2xl ml-2 align-top font-quantico shrink underline">
